@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="505.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportByLocationController">
+   <children>
+      <Pane layoutX="29.0" layoutY="27.0" prefHeight="417.0" prefWidth="694.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Label layoutX="32.0" layoutY="28.0" text="Appointments by Location">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <ComboBox fx:id="locationSelection" layoutX="487.0" layoutY="29.0" onAction="#onLocationSelection" prefHeight="25.0" prefWidth="189.0" promptText="Please select a location..." />
+            <TableView fx:id="appointmentsByLocation" layoutX="19.0" layoutY="79.0" prefHeight="269.0" prefWidth="658.0">
+              <columns>
+                <TableColumn fx:id="location" prefWidth="82.0" text="Location" />
+                <TableColumn fx:id="appointmentId" prefWidth="119.0" text="Appointment ID" />
+                  <TableColumn fx:id="title" prefWidth="95.0" text="Title" />
+                  <TableColumn fx:id="customer" prefWidth="75.0" text="Customer" />
+                  <TableColumn fx:id="start" prefWidth="133.0" text="Start" />
+                  <TableColumn fx:id="end" prefWidth="153.0" text="End" />
+              </columns>
+            </TableView>
+            <Button layoutX="570.0" layoutY="364.0" mnemonicParsing="false" onAction="#onCancelButton" text="Back to Schedule" />
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="436.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateCustomerController">
+    <children>
+        <Label layoutX="42.0" layoutY="40.0" text="Customer Information - Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="43.0" layoutY="91.0" text="Customer ID:" />
+        <Label layoutX="43.0" layoutY="126.0" text="Customer Name:" />
+        <Label layoutX="43.0" layoutY="166.0" text="Address" />
+        <Label layoutX="43.0" layoutY="206.0" text="Postal Code:" />
+        <Label layoutX="43.0" layoutY="246.0" text="Phone Number:" />
+        <Label layoutX="43.0" layoutY="286.0" text="Country:" />
+        <Label layoutX="43.0" layoutY="326.0" text="First Level Division:" />
+        <ComboBox fx:id="updateCountry" layoutX="167.0" layoutY="286.0" onAction="#onCountrySelection" prefWidth="188.0" />
+        <ComboBox fx:id="updateDivision" layoutX="167.0" layoutY="326.0" onAction="#onDivisionSelection" prefWidth="188.0" />
+        <TextField fx:id="updateCustomerId" disable="true" layoutX="168.0" layoutY="86.0" prefHeight="25.0" prefWidth="188.0" />
+        <TextField fx:id="updateCustomerName" layoutX="168.0" layoutY="126.0" prefHeight="25.0" prefWidth="188.0" />
+        <TextField fx:id="updateAddress" layoutX="168.0" layoutY="166.0" prefHeight="25.0" prefWidth="188.0" />
+        <TextField fx:id="updatePostalCode" layoutX="168.0" layoutY="206.0" prefHeight="25.0" prefWidth="188.0" />
+        <TextField fx:id="updatePhoneNumber" layoutX="168.0" layoutY="246.0" prefHeight="25.0" prefWidth="188.0" />
+        <Button layoutX="133.0" layoutY="380.0" mnemonicParsing="false" onAction="#onUpdateButton" text="Update" />
+        <Button layoutX="221.0" layoutY="380.0" mnemonicParsing="false" onAction="#onCancelButton" text="Cancel" />
+    </children>
+</AnchorPane>

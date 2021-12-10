@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="505.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsAppointmentByTypeController">
+   <children>
+      <Pane layoutX="29.0" layoutY="27.0" prefHeight="417.0" prefWidth="694.0" style="-fx-background-color: lightgray;">
+         <children>
+            <TableView fx:id="reportTypeTableView" layoutX="24.0" layoutY="56.0" prefHeight="300.0" prefWidth="644.0">
+              <columns>
+                <TableColumn fx:id="reportTypeMonth" minWidth="0.0" prefWidth="214.0" text="Month" />
+                  <TableColumn fx:id="reportTypeAppointment" prefWidth="165.0" text="Type of Appointment" />
+                  <TableColumn fx:id="reportTypeTotal" prefWidth="264.0" text="Total Amount of Appointments" />
+              </columns>
+            </TableView>
+            <Label layoutX="24.0" layoutY="14.0" text="Customer Appointments by Type and Month">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="561.0" layoutY="368.0" mnemonicParsing="false" onAction="#onCancelButton" text="Back to Schedule" />
+            <ComboBox fx:id="reportMonthSelection" layoutX="488.0" layoutY="15.0" onAction="#onMonthSelection" prefHeight="25.0" prefWidth="180.0" promptText="Please select a month..." />
+         </children></Pane>
+   </children>
+</AnchorPane>
